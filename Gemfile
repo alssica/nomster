@@ -44,7 +44,7 @@ gem 'devise', '>=3.2.4'
 
 gem "geocoder"
 
-gem "figaro"
+gem 'figaro'
 
 
 # Use ActiveModel has_secure_password
