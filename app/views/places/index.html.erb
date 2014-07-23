@@ -33,12 +33,21 @@
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-10 col-xs-offset-1">
 	<h1><%= link_to place.name, place_path(place) %></h1><br />
-	<p><%= place.address %></p><br /><br />
+	<p><%= place.address %></p>
 	<i><%= place.description %></i><br />
 
 	<% if place.user.present? %>
 	<small><%= place.user.email %></small>
 	<% end %>
+<br />
+
+  <% if place.photos.present? %>
+    <figure>
+      <%= image_tag place.photos.last.picture, :class => "img" %>
+      <figcaption><%= place.photos.last.caption %></figcaption>
+    </figure>
+  <% end %>
+</div>
 
 <% if place.comments.present? %>
 <div class="col-xs-12">
