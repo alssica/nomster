@@ -52,6 +52,8 @@ gem 'fancybox2-rails', '~> 0.2.8'
 
 gem "mini_magick"
 
+gem "fog", "~> 1.3.1"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
