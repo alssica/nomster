@@ -3,14 +3,16 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready ->
-  $(".grouped_elements").fancybox
-    maxWidth: 500
-    maxHeight: 600
-    fitToView: false
-    width: '70%'
-    height: '70%'
-    autoSize: false
-    closeClick: false
+  $(".roll").fancybox
+    transitionIn: 'elastic'
+    transitionOut: 'elastic'
+    speedIn: 400
+    speedOut: 400
+    maxWidth: 1000
+    maxHeight: 1000
+    fitToView: true
+    autoSize: true
+    closeClick: true
     openEffect: 'none'
     closeEffect: 'none'
-  return
+return
