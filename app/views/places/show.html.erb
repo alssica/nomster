@@ -47,7 +47,7 @@ function initialize() {
       <%= image_tag photo.picture, :class => 'roll', :size => "300x300", :title => photo.caption %> 
       <figcaption><%= photo.caption %></figcaption>
       <% if current_user && current_user == @place.user %>
-        <%= link_to 'Delete', place_path(@place), :method => :remove_picture, :confirm => 'Are you sure you want to delete this picture?', :class => 'btn btn-warning btn-hv btn-3d' %>
+        <%= link_to 'Delete', photo_path(photo), :method => :delete, :confirm => 'Are you sure you want to delete this picture?', :class => 'btn btn-warning btn-hv btn-3d' %>
       <% end %>
     </figure>
   <% end %>
